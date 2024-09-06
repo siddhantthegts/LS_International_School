@@ -1,19 +1,21 @@
-import React from "react";
+import React from 'react';
 
 const Navbar = () => {
   return (
     <div>
       <nav>
-        <div className="w-full h-20 flex justify-between px-14 items-center bg-white">
+        <div className="w-full h-20 flex justify-between px-14 items-center bg-white stick">
           <div className="flex items-center gap-2">
             <div className="w-12 h-12 rounded-full overflow-hidden ">
               <img
-                className="w-full h-full object-cover "
-                src="https://images.unsplash.com/photo-1509407336566-fca158fddcce?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2FzdGxlfGVufDB8fDB8fHww"
+                className="w-full h-full object-cover  "
+                src="../assets/logo.jpeg"
                 alt="castle"
               />
             </div>
-            <p className="text-2xl font-bold text-indigo-500">Kiddystar</p>
+            <p className="text-[30px] font-medium font-sans hover:text-[35px] text-indigo-500">
+              SR. LS International School
+            </p>
           </div>
           <ul className="flex ">
             <li className="flex mr-6 hover:text-indigo-500 cursor-pointer font-bold text-lg">

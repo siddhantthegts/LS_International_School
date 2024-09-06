@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Footer = () => {
   return (
@@ -57,9 +57,6 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-        </div>
-        <div className="w-full h-8 bg-indigo-800 text-white text-center text-lg font-semibold">
-          copyright-2024
         </div>
       </footer>
     </div>
