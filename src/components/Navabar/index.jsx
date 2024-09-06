@@ -2,15 +2,15 @@ import React from 'react';
 
 const Navbar = () => {
   return (
-    <div>
+    <div className="sticky top-0">
       <nav>
-        <div className="w-full h-20 flex justify-between px-14 items-center bg-white stick">
+        <div className="w-full h-20 flex justify-between px-14 items-center bg-white ">
           <div className="flex items-center gap-2">
             <div className="w-12 h-12 rounded-full overflow-hidden ">
               <img
                 className="w-full h-full object-cover  "
                 src="../assets/logo.jpeg"
-                alt="castle"
+                alt="logo"
               />
             </div>
             <p className="text-[30px] font-medium font-sans hover:text-[35px] text-indigo-500">
