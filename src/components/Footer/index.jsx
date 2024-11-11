@@ -10,11 +10,13 @@ const Footer = () => {
             <div className="w-12 h-12 rounded-full overflow-hidden ">
               <img
                 className="w-full h-full object-cover "
-                src="https://images.unsplash.com/photo-1509407336566-fca158fddcce?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2FzdGxlfGVufDB8fDB8fHww"
+                src="../assets/logo.jpeg"
                 alt="castle"
               />
             </div>
-            <p className="text-2xl font-bold text-indigo-500">Kiddystar</p>
+            <p className="text-2xl font-bold text-indigo-500">
+              SR. LS International
+            </p>
           </div>
 
           <div className="flex w-full mt-11">

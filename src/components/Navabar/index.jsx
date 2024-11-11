@@ -13,7 +13,7 @@ const Navbar = () => {
                 alt="logo"
               />
             </div>
-            <p className="text-[30px] font-medium font-sans hover:text-[35px] text-indigo-500">
+            <p className="text-[30px] font-medium font-sans text-indigo-500">
               SR. LS International School
             </p>
           </div>
