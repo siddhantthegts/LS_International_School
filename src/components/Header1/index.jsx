@@ -66,7 +66,7 @@ const Header1 = () => {
       <div className="bg-white-100">
         <div className="flex flex-row justify-evenly mt-[20px] mb-[20px] pt-[150px] pb-[150px]">
           <div className="flex flex-row w-1/5 gap-[15px]">
-            <img className="w-[80px] h-[80px]" src="public/kindergarten.webp" />
+            <img className="w-[80px] h-[80px]" src="/kindergarten.webp" />
             <div className="flex flex-col">
               <h3>Nurture</h3>
               <p>
@@ -76,7 +76,7 @@ const Header1 = () => {
             </div>
           </div>
           <div className="flex flex-row w-1/5 gap-[15px]">
-            <img className="w-[80px] h-[80px]" src="public/bear-toy.webp" />
+            <img className="w-[80px] h-[80px]" src="/bear-toy.webp" />
             <div className="flex flex-col">
               <h3>Playtime</h3>
               <p>
@@ -86,12 +86,12 @@ const Header1 = () => {
             </div>
           </div>
           <div className="flex flex-row w-1/5 gap-[15px]">
-            <img className="w-[80px] h-[80px]" src="public/pencil-2.webp" />
+            <img className="w-[80px] h-[80px]" src="/pencil-2.webp" />
             <div className="flex flex-col">
               <h3>Activities</h3>
               <p>
                 Launch your kindergarten's website with ease using the Kiddy
-                Star template by OceanWP.
+                Star template by Ocean.
               </p>
             </div>
           </div>
