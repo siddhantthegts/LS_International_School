@@ -7,10 +7,10 @@ const Footer = () => {
         <div className="mx-8 pt-7 ">
           <hr class="h-1 bg-gray-500 border-none w-1/2 text-center mx-auto mt-14 mb-14" />
           <div className="flex items-center gap-2 ">
-            <div className="w-12 h-12 rounded-full overflow-hidden ">
+            <div className="w-[60px] h-[60px] rounded-full overflow-hidden ">
               <img
                 className="w-full h-full object-cover "
-                src="/assets/logo.jpeg"
+                src="/logo.jpeg"
                 alt="castle"
               />
             </div>
@@ -33,10 +33,10 @@ const Footer = () => {
               <h1 className="text-xl font-bold mb-9 ">Useful Links</h1>
               <ul className="text-lg font-medium">
                 <li>Privacy policy</li>
-                <li>online Classes</li>
+                <li>Online Classes</li>
                 <li>Activities</li>
                 <li>Enrollment</li>
-                <li>blog</li>
+                <li>Blog</li>
               </ul>
             </div>
             <div className="w-1/5">
@@ -53,8 +53,8 @@ const Footer = () => {
               <h1 className="text-xl font-bold mb-9 ">Our terms</h1>
               <ul className="text-lg font-medium">
                 <li>Location</li>
-                <li>phone no.</li>
-                <li>email</li>
+                <li>Phone no.</li>
+                <li>Email</li>
                 <li>Website</li>
               </ul>
             </div>
