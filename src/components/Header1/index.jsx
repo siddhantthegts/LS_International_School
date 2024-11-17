@@ -12,25 +12,25 @@ const anim = (height) => {
 const Header1 = () => {
   return (
     <div>
-      <div className="h-auto bg-[#FFD8DE] flex flex-row w-full">
+      <div className="h-auto bg-[#FFD8DE] flex flex-row max-[500px]:flex-col w-full">
         {/* left side started */}
-        <div className="w-1/2 p-st p-[100px] ">
-          <h1 className="text-8xl font-bold font-bubblegum">
+        <div className="w-1/2 max-[500px]:w-full p-st p-[100px] max-[500px]:p-[10px] flex flex-col items-center ">
+          <h1 className="text-8xl max-[500px]:text-6xl font-bold font-bubblegum text-left">
             Secure a <br></br>Better Future
             <br /> For Your <span className="text-indigo-500">Kids</span>
           </h1>
-          <p className="my-7 text-2xl font-semibold ">
+          <p className="my-7 text-2xl font-semibold max-[500px]:text-center">
             Spark a love of learning in your child’s world.
           </p>
-          <p className="mb-7 text-xl font-medium pr-20 leading-loose">
+          <p className="mb-7 text-xl font-medium pr-20 max-[500px]:pr-0 leading-loose max-[500px]:text-center">
             Welcome to SR. LS International, a playful and engaging website
             template designed to showcase your kindergarten, prep school,
             tutoring or any other services that come to your mind. Explore our
             classrooms, meet our educators, and discover the enriching
             experiences that await your little learners.
           </p>
-          <button className="h-auto w-44 bg-[#416087] hover:bg-black p-[20px] text-white transition-all duration-[500ms] rounded-xl mb-3 text-base font-medium ">
-            <span className="flex flex-row gap-[5px] justify-evenly items-center">
+          <button className="h-auto  max-[500px]:h-12 w-44 bg-[#416087] hover:bg-black p-[20px]  max-[500px]:p-[8px] max-[500px]:self-center text-white transition-all duration-[500ms] rounded-xl mb-3 text-base font-medium ">
+            <span className="flex flex-row  gap-[5px] justify-evenly items-center">
               <Icon icon="ic:baseline-arrow-right" width={30} height={30} />
               <p>LEARN MORE</p>
             </span>
@@ -38,24 +38,24 @@ const Header1 = () => {
         </div>
         {/* left side ended */}
         {/* right side started */}
-        <div className="grow flex flex-col justify-center">
-          <div className="flex flex-row justify-evenly mt-8 px-8 gap-[30px]">
+        <div className="grow flex flex-col justify-center max-[500px]:w-full max-[500px]:p-[4px]">
+          <div className="flex flex-row justify-center  max-[500px]:w-full">
             {/* 1st image div */}
-            <div className="w-80 h-80">
-              <div className="h-80 w-80 rounded-full transition-all duration-[1000ms] hover:w-72 hover:h-72 overflow-hidden bg-pink-500 hover:opacity-75">
+            <div className="w-80 h-80 max-[500px]:w-1/2 max-[500px]:h-1/2 ">
+              <div className="h-80 w-80 max-[500px]:w-48 max-[500px]:h-48 rounded-full transition-all duration-[1000ms] hover:w-48 hover:h-48 overflow-hidden  hover:opacity-75">
                 <img
                   className="w-full h-full object-cover object-center"
-                  src="https://media.istockphoto.com/id/1409722748/photo/students-raising-hands-while-teacher-asking-them-questions-in-classroom.webp?b=1&s=612x612&w=0&k=20&c=zEb3WXVRX0z2Mgw0eDdfSqcAjEd1wPbtrq2yhw6f2D0="
+                  src="/school.png"
                   alt="children studying image 1"
                 />
               </div>
             </div>
             {/* 2nd image */}
-            <div className="w-80 h-80">
-              <div className="h-80 w-80 rounded-full transition-all duration-[1000ms] hover:w-72 hover:h-72   overflow-hidden bg-pink-500 hover:opacity-75">
+            <div className="w-80 h-80 max-[500px]:w-1/2 max-[500px]:h-1/2 max-[500px]:h-auto">
+              <div className="h-80 w-80 max-[500px]:w-48 max-[500px]:h-48 rounded-full transition-all duration-[1000ms] hover:w-48 hover:h-48 overflow-hidden  hover:opacity-75">
                 <img
-                  className="w-full h-full object-cover object-center "
-                  src="https://media.istockphoto.com/id/950604826/photo/children-playing-with-skipping-rope.webp?b=1&s=612x612&w=0&k=20&c=4Dohq5W4u6hTZ4ruzwbrG4pDnKlkK8x32wlFpthd5j4="
+                  className="w-full h-full object-cover object-center"
+                  src="/chairperson.jpeg"
                   alt="children studying image 1"
                 />
               </div>
@@ -64,7 +64,7 @@ const Header1 = () => {
           {/* 3rd image */}
           <div className="w-full h-auto flex justify-center align-center">
             <div className="w-60 h-60">
-              <div className="h-60 w-60 transition-all duration-[1000ms] hover:w-52 hover:h-52 rounded-full overflow-hidden bg-red-100 hover:opacity-75">
+              <div className="h-60 w-60  transition-all duration-[1000ms] hover:w-52 hover:h-52 rounded-full overflow-hidden bg-red-100 hover:opacity-75">
                 <img
                   className="w-full h-full object-cover object-center "
                   src="https://media.istockphoto.com/id/1252210017/photo/smiling-girl-playing-on-the-swing.webp?b=1&s=612x612&w=0&k=20&c=lkeUrMxxyz8QiiPkLfI4kZHbaAtD8rAwTGmW1f65lF8="
@@ -77,10 +77,10 @@ const Header1 = () => {
       </div>
       {/* white background content */}
       <div className="bg-white-100">
-        <div className="flex flex-row justify-evenly mt-[20px] mb-[20px] pt-[150px] pb-[150px]">
-          <div className="flex flex-row w-1/5 gap-[15px]">
+        <div className="flex flex-row max-[500px]:flex-col max-[500px]:gap-[35px] max-[500px]:items-center max-[500px]:w-full justify-evenly mt-[20px] mb-[20px] pt-[150px] pb-[150px]">
+          <div className="flex flex-row w-1/5 max-[500px]:w-full gap-[15px] ">
             <img className="w-[80px] h-[80px]" src="/kindergarten.webp" />
-            <div className="flex flex-col">
+            <div className="flex flex-col ">
               <h3 className="text-6xl font-bold font-bubblegum">Nurture</h3>
               <p className="mt-[4px]">
                 Get a safe and productive environment for your children. Healthy
@@ -88,7 +88,7 @@ const Header1 = () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-row w-1/5 gap-[15px]">
+          <div className="flex flex-row w-1/5 max-[500px]:w-full gap-[15px]">
             <img className="w-[80px] h-[80px]" src="/bear-toy.webp" />
             <div className="flex flex-col">
               <h3 className="text-6xl font-bold font-bubblegum">Playtime</h3>
@@ -98,7 +98,7 @@ const Header1 = () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-row w-1/5 gap-[15px]">
+          <div className="flex flex-row w-1/5  max-[500px]:w-full gap-[15px]">
             <img className="w-[80px] h-[80px]" src="/pencil-2.webp" />
             <div className="flex flex-col">
               <h3 className="text-6xl font-bold font-bubblegum">Activities</h3>
@@ -113,17 +113,17 @@ const Header1 = () => {
 
       {/* Our resources section */}
       <div className=" bg-[#F5F2FD]">
-        <div className="flex flex-col pt-[70px] pb-[70px] items-center">
+        <div className="flex flex-col  pt-[70px] pb-[70px] items-center max-[500px]:p-[10px]">
           <p className=" font-bubblegum text-6xl mb-[15px]">Our Resources</p>
-          <p className="text-2xl mb-[50px]">
+          <p className="text-2xl mb-[50px] max-[500px]:text-center">
             This showcases our curriculum and facilities and connects with
             parents seeking the best education for their children.
           </p>
-          <div className="flex flex-row gap-[50px]">
+          <div className="flex flex-row max-[500px]:flex-col gap-[50px]">
             <div className="relative">
               <img
                 src="banner.jpg"
-                className="rounded-3xl"
+                className="rounded-3xl max-[500px]:p-[10px]"
                 onMouseOver={() => {
                   const element = document.getElementById('blackAnim');
                   element.style.height = '100%';
@@ -141,7 +141,7 @@ const Header1 = () => {
             <div className="relative">
               <img
                 src="banner2.jpg"
-                className="rounded-3xl"
+                className="rounded-3xl max-[500px]:p-[10px]"
                 onMouseOver={() => {
                   const element = document.getElementById('blackAnim2');
                   element.style.height = '100%';
@@ -159,7 +159,7 @@ const Header1 = () => {
             <div className="relative">
               <img
                 src="banner3.jpg"
-                className="rounded-3xl"
+                className="rounded-3xl max-[500px]:p-[10px]"
                 onMouseOver={() => {
                   const element = document.getElementById('blackAnim3');
                   element.style.height = '100%';
@@ -180,14 +180,14 @@ const Header1 = () => {
 
       {/* Admission open section */}
       <div className="bg-white-100">
-        <div className="flex flex-row justify-center gap-[50px] mt-[20px] mb-[20px] px-[20px] pt-[150px] pb-[150px]">
-          <div className="flex w-[500px] ">
+        <div className="flex flex-row max-[500px]:flex-col justify-center gap-[50px] mt-[20px] mb-[20px] px-[20px] pt-[150px] pb-[150px]">
+          <div className="flex w-[500px] max-[500px]:w-full ">
             <img
               className="w-full h-full rounded-[50px]"
               src="/admission.jpg"
             />
           </div>
-          <div className="flex flex-col w-1/2 justify-center gap-[20px]">
+          <div className="flex flex-col w-1/2 max-[500px]:w-full justify-center gap-[20px]">
             <h3 className="text-6xl font-bold font-bubblegum">
               Help your kids discover and unleash Creativity
             </h3>
@@ -206,7 +206,6 @@ const Header1 = () => {
           </div>
         </div>
       </div>
-
       {/* Learning objectives and outcomes */}
       <div className="bg-cyan-700">
         <div className="flex flex-row justify-center items-center gap-[20px] px-[20px] pt-[150px] pb-[150px]">

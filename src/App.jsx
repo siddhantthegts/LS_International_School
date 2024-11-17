@@ -1,8 +1,8 @@
-import "./App.css";
-import Header1 from "./components/Header1";
-import Navbar from "./components/Navabar";
-import Form from "./components/Form";
-import Footer from "./components/Footer";
+import './App.css';
+import Header1 from './components/Header1';
+import Navbar from './components/Navabar';
+import Form from './components/Form';
+import Footer from './components/Footer';
 function App() {
   return (
     <>
