@@ -14,7 +14,7 @@ const Header1 = () => {
     <div>
       <div className="h-auto bg-[#FFD8DE] flex flex-row max-[500px]:flex-col w-full">
         {/* left side started */}
-        <div className="w-1/2 max-[500px]:w-full p-st p-[100px] max-[500px]:p-[10px] flex flex-col items-center ">
+        <div className="w-1/2 max-[500px]:w-full p-st p-[100px] max-[500px]:p-[10px] flex flex-col max-[500px]:items-center max-[500px]:order-2">
           <h1 className="text-8xl max-[500px]:text-6xl font-bold font-bubblegum text-left">
             Secure a <br></br>Better Future
             <br /> For Your <span className="text-indigo-500">Kids</span>
@@ -22,7 +22,7 @@ const Header1 = () => {
           <p className="my-7 text-2xl font-semibold max-[500px]:text-center">
             Spark a love of learning in your child’s world.
           </p>
-          <p className="mb-7 text-xl font-medium pr-20 max-[500px]:pr-0 leading-loose max-[500px]:text-center">
+          <p className="mb-7 text-xl font-medium pr-20 max-[500px]:pr-0 leading-loose max-[500px]:text-left">
             Welcome to SR. LS International, a playful and engaging website
             template designed to showcase your kindergarten, prep school,
             tutoring or any other services that come to your mind. Explore our
@@ -38,11 +38,11 @@ const Header1 = () => {
         </div>
         {/* left side ended */}
         {/* right side started */}
-        <div className="grow flex flex-col justify-center max-[500px]:w-full max-[500px]:p-[4px]">
+        <div className="grow flex flex-col justify-center max-[500px]:w-full max-[500px]:p-[4px] max-[500px]:order-1">
           <div className="flex flex-row justify-center  max-[500px]:w-full">
             {/* 1st image div */}
             <div className="w-80 h-80 max-[500px]:w-1/2 max-[500px]:h-1/2 ">
-              <div className="h-80 w-80 max-[500px]:w-48 max-[500px]:h-48 rounded-full transition-all duration-[1000ms] hover:w-48 hover:h-48 overflow-hidden  hover:opacity-75">
+              <div className="h-80 w-80 max-[500px]:w-44 max-[500px]:h-44 rounded-full transition-all duration-[1000ms] hover:w-72 hover:h-72 overflow-hidden max-[500px]:hover:w-44 max-[500px]:hover:h-44 hover:opacity-75">
                 <img
                   className="w-full h-full object-cover object-center"
                   src="/school.png"
@@ -52,7 +52,7 @@ const Header1 = () => {
             </div>
             {/* 2nd image */}
             <div className="w-80 h-80 max-[500px]:w-1/2 max-[500px]:h-1/2 max-[500px]:h-auto">
-              <div className="h-80 w-80 max-[500px]:w-48 max-[500px]:h-48 rounded-full transition-all duration-[1000ms] hover:w-48 hover:h-48 overflow-hidden  hover:opacity-75">
+              <div className="h-80 w-80 max-[500px]:w-44 max-[500px]:h-44 rounded-full transition-all duration-[1000ms] hover:w-72 hover:h-72 max-[500px]:hover:w-44 max-[500px]:hover:h-44 overflow-hidden  hover:opacity-75">
                 <img
                   className="w-full h-full object-cover object-center"
                   src="/chairperson.jpeg"
@@ -63,8 +63,8 @@ const Header1 = () => {
           </div>
           {/* 3rd image */}
           <div className="w-full h-auto flex justify-center align-center">
-            <div className="w-60 h-60">
-              <div className="h-60 w-60  transition-all duration-[1000ms] hover:w-52 hover:h-52 rounded-full overflow-hidden bg-red-100 hover:opacity-75">
+            <div className="w-60 h-60 max-[500px]:w-full max-[500px]:h-auto flex justify-center">
+              <div className="h-60 w-60 max-[500px]:w-40 max-[500px]:h-40  transition-all duration-[1000ms] hover:w-52 hover:h-52  max-[500px]:hover:w-36 max-[500px]:hover:h-36 rounded-full overflow-hidden bg-red-100 hover:opacity-75">
                 <img
                   className="w-full h-full object-cover object-center "
                   src="https://media.istockphoto.com/id/1252210017/photo/smiling-girl-playing-on-the-swing.webp?b=1&s=612x612&w=0&k=20&c=lkeUrMxxyz8QiiPkLfI4kZHbaAtD8rAwTGmW1f65lF8="
@@ -77,7 +77,7 @@ const Header1 = () => {
       </div>
       {/* white background content */}
       <div className="bg-white-100">
-        <div className="flex flex-row max-[500px]:flex-col max-[500px]:gap-[35px] max-[500px]:items-center max-[500px]:w-full justify-evenly mt-[20px] mb-[20px] pt-[150px] pb-[150px]">
+        <div className="flex flex-row max-[500px]:flex-col max-[500px]:gap-[35px] max-[500px]:items-center max-[500px]:w-full justify-evenly mt-[20px] mb-[20px] pt-[150px] pb-[150px] max-[500px]:p-[10px]">
           <div className="flex flex-row w-1/5 max-[500px]:w-full gap-[15px] ">
             <img className="w-[80px] h-[80px]" src="/kindergarten.webp" />
             <div className="flex flex-col ">
@@ -120,7 +120,7 @@ const Header1 = () => {
             parents seeking the best education for their children.
           </p>
           <div className="flex flex-row max-[500px]:flex-col gap-[50px]">
-            <div className="relative">
+            <div className="relative z-0">
               <img
                 src="banner.jpg"
                 className="rounded-3xl max-[500px]:p-[10px]"
@@ -208,8 +208,8 @@ const Header1 = () => {
       </div>
       {/* Learning objectives and outcomes */}
       <div className="bg-cyan-700">
-        <div className="flex flex-row justify-center items-center gap-[20px] px-[20px] pt-[150px] pb-[150px]">
-          <div className="flex flex-col w-1/2 justify-center gap-[20px]">
+        <div className="flex flex-row max-[500px]:flex-col justify-center items-center gap-[20px] px-[20px] pt-[150px] pb-[150px]">
+          <div className="flex flex-col w-1/2 max-[500px]:w-full max-[500px]:order-2 justify-center gap-[20px]">
             <h3 className="text-6xl text-white font-bold font-bubblegum">
               Learning objectives &{' '}
               <span className="text-[#FFD8DE]">outcomes</span>
@@ -277,6 +277,35 @@ const Header1 = () => {
           </div>
           <div className="flex ">
             <img className="w-full h-full rounded-[50px]" src="/learning.jpg" />
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-[#F5F2FD] py-14 px-36 max-[500px]:px-0 max-[500px]:py-[60px] ">
+        <div className="bg-[#262633] flex flex-row justify-center p-[30px] max-[500px]:p-0 gap-[40px] rounded-3xl w-[80%] max-[500px]:w-full max-[500px]:flex-col m-auto">
+          <div>
+            <img
+              src="https://kiddystar.oceanwp.org/wp-content/uploads/2024/02/kiddystar-hero-img-002.jpg"
+              className="rounnded-[20px] rounded-3xl"
+            />
+          </div>
+          <div className="flex flex-col w-1/2 justify-center gap-[25px] max-[500px]:w-full max-[500px]:p-[15px]">
+            <p className="font-bubblegum text-5xl text-white text-left">
+              Check if we're the right choice for your child. Take the online
+              quiz now
+            </p>
+            <p className="text-white text-left text-xl">
+              Share your educational philosophy, core values, and the passionate
+              educators who nurture young minds. Highlight your unique
+              offerings, such as extracurricular activities, play-based
+              learning, or specialized programs.
+            </p>
+            <button className="h-[50px] w-[180px] bg-white hover:bg-black transition-all duration-[500ms] rounded-full mb-3 text-base font-medium ">
+              <span className="flex flex-row justify-center items-center text-black hover:text-white">
+                <Icon icon="ic:baseline-arrow-right" width={30} height={30} />
+                <p className="text-black hover:text-white">Contact Us</p>
+              </span>
+            </button>
           </div>
         </div>
       </div>

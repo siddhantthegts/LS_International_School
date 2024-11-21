@@ -3,7 +3,7 @@ import React from 'react';
 const width = window.innerWidth;
 const Navbar = () => {
   return (
-    <div className="sticky top-0">
+    <div className="sticky top-0 z-10">
       <nav>
         <div className="w-full h-auto flex justify-between  max-[500px]:justify-center px-14 max-[500px]:px-0 items-center bg-white ">
           <div className="flex flex-row max-[500px]:justify-start  items-center gap-2 p-[20px]  ">
