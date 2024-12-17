@@ -1,5 +1,6 @@
 import { Icon } from '@iconify/react';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 let height = 0;
 const anim = (height) => {
@@ -197,12 +198,15 @@ const Header1 = () => {
               kindergarten’s atmosphere and connect with parents and children
               alike.
             </p>
-            <button className="h-[50px] w-[180px] bg-[#416087] hover:bg-black text-white transition-all duration-[500ms] rounded-full mb-3 text-base font-medium ">
-              <span className="flex flex-row justify-center items-center ">
-                <Icon icon="ic:baseline-arrow-right" width={30} height={30} />
-                <p>ADMISSION</p>
-              </span>
-            </button>
+            <Link to="/admission">
+              <button className="h-[50px] w-[180px] bg-[#416087] hover:bg-black text-white transition-all duration-[500ms] rounded-full mb-3 text-base font-medium ">
+                <span className="flex flex-row justify-center items-center ">
+                  <Icon icon="ic:baseline-arrow-right" width={30} height={30} />
+
+                  <p>ADMISSION</p>
+                </span>
+              </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -268,12 +272,14 @@ const Header1 = () => {
               </p>
             </div>
 
-            <button className="h-[50px] w-[180px] bg-[#416087] hover:bg-black text-white transition-all duration-[500ms] rounded-full mb-3 text-base font-medium ">
-              <span className="flex flex-row justify-center items-center ">
-                <Icon icon="ic:baseline-arrow-right" width={30} height={30} />
-                <p>ADMISSION</p>
-              </span>
-            </button>
+            <Link to="/admission">
+              <button className="h-[50px] w-[180px] bg-[#416087] hover:bg-black text-white transition-all duration-[500ms] rounded-full mb-3 text-base font-medium ">
+                <span className="flex flex-row justify-center items-center ">
+                  <Icon icon="ic:baseline-arrow-right" width={30} height={30} />
+                  <p>ADMISSION</p>
+                </span>
+              </button>
+            </Link>
           </div>
           <div className="flex ">
             <img className="w-full h-full rounded-[50px]" src="/learning.jpg" />

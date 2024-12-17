@@ -5,6 +5,9 @@ export default {
     extend: {
       fontFamily: {
         bubblegum: ['Bubblegum Sans', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
+        manrope: ['Manrope', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif'],
       },
     },
   },

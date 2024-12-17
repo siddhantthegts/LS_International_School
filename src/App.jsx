@@ -1,16 +1,22 @@
 import './App.css';
-import Header1 from './components/Header1';
-import Navbar from './components/Navabar';
-import Form from './components/Form';
-import Footer from './components/Footer';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import HomePage from './HomePage';
+import AdmissionOpenPage from '../AdmissionOpenPage';
+import NotFoundPage from './NotFoundPage';
+import AcademicsPage from './AcademicsPage';
+import AboutUsPage from '../AboutUsPage';
 function App() {
   return (
-    <>
-      <Navbar></Navbar>
-      <Header1></Header1>
-      <Form></Form>
-      <Footer></Footer>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/admission" element={<AdmissionOpenPage />} />
+        <Route path="/academics" element={<AcademicsPage />} />
+        <Route path="/aboutus" element={<AboutUsPage />} />
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
