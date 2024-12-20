@@ -182,4 +182,8 @@ select {
     width: 100%;
     flex-basis: 0%;
   }
+  #leadershipContainer {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
 }
