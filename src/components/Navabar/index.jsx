@@ -103,6 +103,11 @@ const Navbar = () => {
       </nav>
       {width > 500 ? (
         <ul className="flex flex-row max-[500px]:hidden justify-evenly  p-[8px] items-center">
+          <Link to="/">
+            <li className="flex  hover:text-white cursor-pointer font-medium text-lg font-poppins p-[10px] rounded-2xl hover:bg-indigo-500 ">
+              Home
+            </li>
+          </Link>
           <Link to="/admission">
             <li className="flex  hover:text-white cursor-pointer font-medium text-lg font-poppins p-[10px] rounded-2xl hover:bg-indigo-500 ">
               Admission
@@ -174,38 +179,61 @@ const Navbar = () => {
                 transition: 'opacity 0.5s ease, max-height 0.5s ease',
               }}
             >
+              <Link to="/">
+                <li className="p-[8px] m-[2px] hover:bg-[#eeeeee] hover:text-black rounded-xl">
+                  Home
+                </li>
+              </Link>
               <Link to="/admission">
                 <li className="p-[8px] m-[2px] hover:bg-[#eeeeee] hover:text-black rounded-xl">
                   Admission
                 </li>
               </Link>
-              <li className="p-[8px] m-[2px] hover:bg-[#eeeeee] hover:text-black rounded-xl">
-                Campus
-              </li>
-              <li className="p-[8px] m-[2px] hover:bg-[#eeeeee] hover:text-black rounded-xl">
-                Academics
-              </li>
-              <li className="p-[8px] m-[2px] hover:bg-[#eeeeee] hover:text-black rounded-xl">
-                News and Events
-              </li>
-              <li className="p-[8px] m-[2px] hover:bg-[#eeeeee] hover:text-black rounded-xl">
-                Carrier
-              </li>
-              <li className="p-[8px] m-[2px] hover:bg-[#eeeeee] hover:text-black rounded-xl">
-                Photos
-              </li>
-              <li className="p-[8px] m-[2px] hover:bg-[#eeeeee] hover:text-black rounded-xl">
-                Fee Structure
-              </li>
-              <li className="p-[8px] m-[2px] hover:bg-[#eeeeee] hover:text-black rounded-xl">
-                Facilities
-              </li>
-              <li className="p-[8px] m-[2px] hover:bg-[#eeeeee] hover:text-black  rounded-xl">
-                About us
-              </li>
-              <li className="p-[8px] m-[2px] hover:bg-[#eeeeee] hover:text-black  rounded-xl">
-                Contact Us
-              </li>
+              <Link to="/campus">
+                <li className="p-[8px] m-[2px] hover:bg-[#eeeeee] hover:text-black rounded-xl">
+                  Campus
+                </li>
+              </Link>
+              <Link to="/academics">
+                <li className="p-[8px] m-[2px] hover:bg-[#eeeeee] hover:text-black rounded-xl">
+                  Academics
+                </li>
+              </Link>
+              <Link to="/news">
+                <li className="p-[8px] m-[2px] hover:bg-[#eeeeee] hover:text-black rounded-xl">
+                  News and Events
+                </li>
+              </Link>
+              <Link to="/carrier">
+                <li className="p-[8px] m-[2px] hover:bg-[#eeeeee] hover:text-black rounded-xl">
+                  Carrier
+                </li>
+              </Link>
+              <Link to="/photos">
+                <li className="p-[8px] m-[2px] hover:bg-[#eeeeee] hover:text-black rounded-xl">
+                  Photos
+                </li>
+              </Link>
+              <Link to="/fee_structure">
+                <li className="p-[8px] m-[2px] hover:bg-[#eeeeee] hover:text-black rounded-xl">
+                  Fee Structure
+                </li>
+              </Link>
+              <Link to="/facilities">
+                <li className="p-[8px] m-[2px] hover:bg-[#eeeeee] hover:text-black rounded-xl">
+                  Facilities
+                </li>
+              </Link>
+              <Link to="/aboutus">
+                <li className="p-[8px] m-[2px] hover:bg-[#eeeeee] hover:text-black  rounded-xl">
+                  About us
+                </li>
+              </Link>
+              <Link to="/contactus">
+                <li className="p-[8px] m-[2px] hover:bg-[#eeeeee] hover:text-black  rounded-xl">
+                  Contact Us
+                </li>
+              </Link>
             </div>
           </ul>
         </>

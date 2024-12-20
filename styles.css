@@ -52,18 +52,123 @@ select {
   font-size: 25px;
 }
 #image {
-  flex-basis: 50%;
   width: 300px;
+  position: relative;
+  right: -10%; /* Adjust to overlap slightly */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#imageFounder {
+  width: 300px;
+  position: relative;
+  left: -10%; /* Adjust to overlap slightly */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#charimenContainer {
+  background-color: #f0f0f0;
+  border-radius: 5% 20% 20% 5%;
+  margin-left: auto;
+}
+#founderContainer {
+  background-color: #f3ebeb;
+  margin-right: auto;
+  border-radius: 20% 5% 5% 20%;
+}
+#founderWrapper {
+  flex: 1;
+  margin-left: 90px;
+}
+#chairmenWrapper {
+  flex: 1;
+  margin-right: 90px;
 }
 #message {
-  flex-basis: 50%;
+  flex-basis: 60%;
 }
-@media (max-width: 500px) {
+#textContainer {
+  display: flex;
+  flex-direction: column;
+}
+#leadershipSection {
+  background-color: #f0f0f0;
+  padding: 10px;
+  opacity: 0.9;
+}
+#leadershipContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+  margin: 20px;
+}
+#leadership {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+#leadershiptitle {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+#percentage {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  font-family: 'Manrope', sans-serif;
+  background-color: #8400fe;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+#leadership-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+@media (max-width: 768px) {
   #secondimg {
     width: 200px;
     height: 200px;
     right: 0;
     bottom: -10%;
+  }
+
+  #chairmenWrapper {
+    margin: 0;
+  }
+
+  #founderWrapper {
+    margin: 0;
+  }
+  #charimenContainer,
+  #founderContainer {
+    display: grid;
+    grid-template-rows: auto auto; /* Two rows: one for image, one for text */
+    justify-items: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    gap: 20px;
+    width: 100%;
+    border-radius: 2%;
+  }
+
+  #image,
+  #imageFounder {
+    width: 300px; /* Fixed width */
+    height: 300px; /* Fixed height */
+    border-radius: 50%; /* Make circular */
+    object-fit: cover; /* Ensure image scales properly */
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+  }
+
+  #message {
+    order: 2;
   }
   #bgimage {
     width: 100%;
